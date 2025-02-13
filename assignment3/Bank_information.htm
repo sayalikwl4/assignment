@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Information Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 5px;
+        }
+        .container {
+            max-width: 350px;
+            margin:auto;
+            background:#E3F2FD;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h3 {
+            text-align: left;
+            color: #2c3e50;
+        }
+        label {
+            font-weight:normal;
+            display: block;
+            margin-top: 4px;
+            font-size: 10px;
+        }
+        input, select {
+            width: 100%;
+            padding: 3px;
+            margin-top: 5px;
+            border: 1px solid yellowgreen;
+            border-radius: 3px;
+        }
+       
+        .inline-group {
+            display: flex;
+            gap: 10px;
+        }
+        .inline-group input {
+            flex: 1;
+        }
+        .inline-group select {
+            flex: 1;
+        }
+        .inline-group label {
+            flex: 1;
+        }
+        .account-type {
+            margin-top: 10px;
+        }
+        .account-type input {
+            width: auto;
+            margin-right: 5px;
+            padding: 10px;
+        }
+        .account-type label {
+            width: auto;
+            margin-right: 5px;            
+        }
+        .account
+        {
+            width: auto;
+            margin-right: 5px;
+            margin-bottom: 5px; 
+            align-items: center; display: flex;
+        }
+        .submit-btn {
+            display: block;
+            width: 30%;
+            padding: 8px;
+            background-color: #2c3e50;
+            color: white;
+            border: none;
+            /* border-radius: 5px; */
+            font-size: 13px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .submit-btn:hover {
+            background-color: #1a252f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>Bank Information Form</h3>
+        <form>
+            <div class="inline-group">
+            <label for="bank-name">Bank Name</label>
+            <label for="bank-name">Branch Name</label>
+        </div>
+            <div class="inline-group">
+                <input type="text" id="bank-name" name="bank_name">
+                <input type="text" id="branch-name" name="branch_name" placeholder="">
+            </div>
+            <label for="branch-number">Branch Number</label>
+            <input type="text" id="branch-number" name="branch_number">
+            <label for="street-address">Branch Address</label>
+            <input type="text" id="street-address" name="street_address" placeholder="Street Address">
+            <input type="text" name="street_address2" placeholder="Street Address Line 2">
+            <div class="inline-group">
+                <input type="text" name="city" placeholder="City">
+                <input type="text" name="region" placeholder="Region">
+            </div>
+           <div class="inline-group">
+                <input type="text" name="postal_code" placeholder="Postal / Zip Code">
+                <select name="country">
+                    <option value="romania">Romania</option>
+                    <option value="romania">India</option>
+                </select>
+            </div>
+            <label for="currency">Bank Account Currency</label>
+            <input type="text" id="currency" name="currency">
+            <label for="swift">SWIFT/BIC</label>
+            <input type="text" id="swift" name="swift">
+            <label for="iban">IBAN No.</label>
+            <input type="text" id="iban" name="iban">
+            <label for="account-name">Bank Account Name</label>
+            <input type="text" id="account-name" name="account_name">
+             <label>Account Type</label>
+            <div class="account-type"  >
+                <label for="checking" class="account"  >
+                    <input type="radio" id="checking" name="account_type" value="checking"/>
+                    Checking
+            </label>
+                <label for="savings" class="account" ><input type="radio" id="savings" name="account_type" value="savings">Savings
+                </label>
+                <label for="other" class="account" ><input type="radio" id="other" name="account_type" value="other">Other:</label>
+            </div>
+            <button type="submit" class="submit-btn">SEND</button>
+        </form>
+    </div>
+</body>
+</html>
