@@ -1,0 +1,94 @@
+<html>
+<head>
+<title>Margin, Border and Padding</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #3c3c3c;
+        }
+        .space {
+            background-color: white;
+            padding: 60px;
+            width: 30%;
+             /* height: 30%;  */
+            position: relative;           
+        }
+        .space-label
+        {
+            text-align:center;
+            color: #4fa3e3;
+            font-size: 20px;
+             padding: 60px; 
+             /* margin: 40px; */
+        }
+        .margin {
+            background-color: #f4d37d;
+            padding: 40px;
+            position: relative;
+        }
+       .border {
+            background-color: #4fa3e3;
+            padding: 30px;
+            border: 4px solid black;
+        }
+       .padding {
+            background-color: #bcbcbc;
+            padding: 25px;
+        }
+        .content {
+            background-color: #0066cc;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        .label {
+            position: absolute;
+            font-size: 16px;
+            font-weight: bold;
+            color: black;
+        }       
+        .margin-label {
+            top: 10px;
+            left: 10px;
+        }
+        .border-label {
+            top: 50px;
+            left: 50px;
+        }
+        .padding-label {
+            top: 75px;
+            left: 100px;
+        }       
+        .top { top: -55px; left: 50%; transform: translateX(-50%); }
+        .bottom { bottom: -25px; left: 50%; transform: translateX(-50%); }
+        .left { left: -40px; top: 50%; transform: translateY(-50%); }
+        .right { right: -50px; top: 50%; transform: translateY(-50%); }
+    </style>
+</head>
+<body>  
+    <div class="space">  
+        <span class="space-label"> Margin, Border and Padding </span>
+    <div class="margin">
+        <span class="label margin-label">Margin</span>
+        <div class="border">
+            <span class="label border-label">Border</span>
+            <div class="padding">
+                <span class="label padding-label">Padding</span>               
+                <div class="label top">
+                    top        
+                </div>
+                <div class="label bottom">Bottom</div>
+                <div class="label left">Left</div>
+                <div class="label right">Right</div>
+                <div class="content">
+                    Element or object
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

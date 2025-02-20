@@ -1,0 +1,78 @@
+<html>
+<head>   
+    <title>Moving Text in HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #0082c8, #00a6ff);
+            text-align: center;
+            color: white;
+        }
+        h1 {
+            font-size: 40px;
+            font-weight: bold;
+            margin-top: 50px;
+        }
+        .marquee-box {
+            background-color: lightgreen;
+            color: black;
+            padding: 30px;
+            /* margin-left: 250px; */
+             margin: 25px auto; 
+            width: 45%;
+            height: 15%;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            /* float: right; */
+            border-radius: 5px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+        }
+        p {
+            font-size: 14px;
+            margin-top: 5px;
+        }
+        .html-icon {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            /* background: white; */
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        .footer {
+            margin-top: 100px;
+            font-size: 15px;
+            text-align:right;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Moving Text in HTML</h1>
+
+    <div class="marquee-box">
+        <marquee behavior="scroll" direction="left">
+            Moving Text with Marquee Tag
+        </marquee>
+        <p>2020 is a year bewildered each and every individual of the world due to pandemic COVID-19.</p>
+    </div>
+
+    <div class="marquee-box">
+        <marquee behavior="scroll" direction="right">
+            Moving Text with Marquee Tag
+        </marquee>
+        <p>At least 14 days. After finishing quarantine, they must go for a CORONA test.</p>
+    </div>
+
+    <div class="html-icon">
+        <img src="html_icon.png" alt="HTML Icon" width="100">
+    </div>
+
+    <div class="footer">
+        <h2>www.educba.com</h2>
+    </div>
+
+</body>
+</html>
