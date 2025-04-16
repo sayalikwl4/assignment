@@ -1,0 +1,75 @@
+<html>
+<head>
+    <title>Z-Index Layout</title>
+    <style>
+        body {
+            background-color: #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            position: relative;
+            width: 600px;
+            height: 400px;
+        }
+        .foo {
+            position: absolute;
+            width: 80%;
+            height: 80%;
+            background-color: #77cc33;
+            z-index: 1;
+        }
+        .bar {
+            position: absolute;
+            width: 300px;
+            height: 200px;
+            background-color: #3388ff;
+            top: 80px;
+            left: 100px;
+            z-index: 2;
+        }
+        .baz {
+            position: absolute;
+            width: 300px;
+            height: 200px;
+            background-color: #e22;
+            top: 200px;
+            left: 250px;
+            z-index: 1000;
+        }
+        .text {
+            position: absolute;
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            color: white;
+            font-weight: bold;
+        }
+        .foo .text { top: 20px; left: 20px; }
+        .bar .text { top: 20px; left: 20px; }
+        .baz .text { top: 20px; left: 20px; }
+        .footer {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="foo">
+            <div class="text">.foo {<br>z-index: 1;<br>}</div>
+        </div>
+        <div class="bar">
+            <div class="text">.bar {<br>z-index: 1000;<br>}</div>
+        </div>
+        <div class="baz">
+            <div class="text">.baz {<br>z-index: 2;<br>}</div>
+        </div>
+    </div>
+    <div class="footer">bitsofco.de</div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<html>
+<head>
+
+    <title>Position Task</title>
+    <style>
+        body {
+            background-color: #DFF6FF;
+            text-align: center;
+            height: 40vh;
+
+           
+        }
+        h2 {
+            color: darkred;
+            font-weight: bold;
+        }
+        .container {
+            position: relative;
+            width: 700px;
+            height: 400px;
+            background-color: rgb(84, 121, 234);
+            margin: auto;
+            margin-top: 20px;
+        }
+        .box {
+            position: absolute;
+            background-color: #FCE4C3;
+            padding: 20px;
+            /* border-radius: 5px; */
+            font-size: 22px;
+        }
+        .top-left { top: 0px; left: 0px; }
+        .top-right { top: 0px; right: 0px; }
+        .bottom-left { bottom: 0px; left: 0px; }
+        .bottom-right { bottom: 0px; right: 0px; }
+        .center { top: 50%; left: 50%; transform: translate(-50%, -50%); }
+        .bottom-center { bottom: -20px; left: 50%; transform: translateX(-50%); }
+    </style>
+</head>
+<body>
+    <h2>Position Task</h2>
+    <div class="container">
+        <div class="box top-left">hello world</div>
+        <div class="box top-right">hello world</div>
+        <div class="box bottom-left">hello world</div>
+        <div class="box bottom-right">hello world</div>
+        <div class="box center">hello world</div>
+        <div class="box bottom-center">hello world</div>
+    </div>
+</body>
+</html>

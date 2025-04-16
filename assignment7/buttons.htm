@@ -1,0 +1,62 @@
+<html>
+<head>
+    <title>Gradient Buttons</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+            background-color: #f8f8f8;
+        }
+        .buttons-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            max-width: 600px;
+        }
+        .button {
+            padding: 10px 35px;
+            border: none;
+            border-radius: 35px;
+            font-size: 12px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            text-transform: uppercase;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease-in-out;
+        }
+        .button:hover {
+            transform: translateY(-3px);
+        }
+        .btn1 { background: linear-gradient(45deg, #00c6ff, #0072ff); }
+        .btn2 { background: linear-gradient(45deg, #ff9966, #ff5e62); }
+        .btn3 { background: linear-gradient(45deg, #8e2de2, #4a00e0); }
+        .btn4 { background: linear-gradient(45deg, #ff512f, #dd2476); }
+        .btn5 { background: linear-gradient(45deg, #00b09b, #96c93d); }
+        .btn6 { background: linear-gradient(45deg, #00ff00, #ffff00); }
+        .btn7 { background: linear-gradient(45deg, #6a11cb, #2575fc); }
+        .btn8 { background: linear-gradient(45deg, #232526, #414345); }
+        .btn9 { background: linear-gradient(45deg, #56CCF2, #2F80ED); }
+        .btn10 { background: linear-gradient(45deg, #FF758C, #FF7EB3); }
+        .btn11 { background: linear-gradient(45deg, #E53935, #E35D5B); }
+    </style>
+</head>
+<body>
+    <div class="buttons-container">
+        <button class="button btn1">Button</button>
+        <button class="button btn2">Button</button>
+        <button class="button btn3">Button</button>
+        <button class="button btn4">Button</button>
+        <button class="button btn5">Button</button>
+        <button class="button btn6">Button</button>
+        <button class="button btn7">Button</button>
+        <button class="button btn8">Button</button>
+        <button class="button btn9">Button</button>
+        <button class="button btn10">Button</button>
+        <button class="button btn11">Button</button>
+    </div>
+</body>
+</html>
