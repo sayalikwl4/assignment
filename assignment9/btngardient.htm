@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hover Gradient Buttons</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50vh;
+      background: #fff;
+      font-family: sans-serif;
+    }
+
+    .button-container {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         gap: 20px;
+         max-width: 600px;
+
+    }
+
+    .gradient-button {
+      padding: 10px 35px;
+      border: none;
+      border-radius: 40px;
+      background: #ddd; /* neutral base */
+      color: #333;
+      font-weight: bold;
+      font-size: 12px;
+      cursor: pointer;
+      box-shadow: none;
+      transition: all 0.3s ease;
+    }
+
+    .gradient-button:hover {
+      color: white;
+      transform: scale(1.05);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn1:hover  { background: linear-gradient(to right, #00c6ff, #0072ff); }
+    .btn2:hover  { background: linear-gradient(to right, #f7971e, #ffd200); }
+    .btn3:hover  { background: linear-gradient(to right, #654ea3, #eaafc8); }
+    .btn4:hover  { background: linear-gradient(to right, #ff416c, #ff4b2b); }
+    .btn5:hover  { background: linear-gradient(to right, #00b09b, #96c93d); }
+    .btn6:hover  { background: linear-gradient(to right, #56ab2f, #a8e063); }
+    .btn7:hover  { background: linear-gradient(to right, #8e2de2, #4a00e0); }
+    .btn8:hover  { background: linear-gradient(to right, #232526, #414345); }
+    .btn9:hover  { background: linear-gradient(to right, #2193b0, #6dd5ed); }
+    .btn10:hover { background: linear-gradient(to right, #ffecd2, #fcb69f); color: #333; }
+    .btn11:hover { background: linear-gradient(to right, #ff5858, #f09819); }
+
+  </style>
+</head>
+<body>
+
+  <div class="button-container">
+    <button class="gradient-button btn1">BUTTON</button>
+    <button class="gradient-button btn2">BUTTON</button>
+    <button class="gradient-button btn3">BUTTON</button>
+    <button class="gradient-button btn4">BUTTON</button>
+    <button class="gradient-button btn5">BUTTON</button>
+    <button class="gradient-button btn6">BUTTON</button>
+    <button class="gradient-button btn7">BUTTON</button>
+    <button class="gradient-button btn8">BUTTON</button>
+    <button class="gradient-button btn9">BUTTON</button>
+    <button class="gradient-button btn10">BUTTON</button>
+    <button class="gradient-button btn11">BUTTON</button>
+  </div>
+
+</body>
+</html>
