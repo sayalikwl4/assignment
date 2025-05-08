@@ -1,0 +1,98 @@
+<!-- 3D transformation in CSS -->
+<html>
+<head>
+  <title>CSS 3D Transformations</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      padding: 80px;
+      perspective: 800px; /* Enables 3D space */
+    }
+
+    .box-container {
+      text-align: center;
+    }
+
+    .box {
+      width: 240px;
+      height: 160px;
+      background-color: #4CAF50;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid #ccc;
+      transition: transform 0.6s ease;
+      transform-style: preserve-3d;
+    }
+
+    /* Apply 3D transform on hover */
+    .rotateX:hover {
+      transform: rotateX(45deg);
+    }
+
+    .rotateY:hover {
+      transform: rotateY(45deg);
+    }
+
+    .rotateZ:hover {
+      transform: rotateZ(45deg);
+    }
+
+    .translateX:hover {
+      transform: translateX(30px);
+    }
+
+    .translateY:hover {
+      transform: translateY(30px);
+    }
+
+    .translateZ:hover {
+      transform: translateZ(50px);
+    }
+
+    .label {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box-container">
+    <div class="box rotateX">rotateX(45deg)</div>
+    <div class="label">rotateX</div>
+  </div>
+
+  <div class="box-container">
+    <div class="box rotateY">rotateY(45deg)</div>
+    <div class="label">rotateY</div>
+  </div>
+
+  <div class="box-container">
+    <div class="box rotateZ">rotateZ(45deg)</div>
+    <div class="label">rotateZ</div>
+  </div>
+
+  <div class="box-container">
+    <div class="box translateX">translateX(30px)</div>
+    <div class="label">translateX</div>
+  </div>
+
+  <div class="box-container">
+    <div class="box translateY">translateY(30px)</div>
+    <div class="label">translateY</div>
+  </div>
+
+  <div class="box-container">
+    <div class="box translateZ">translateZ(50px)</div>
+    <div class="label">translateZ</div>
+  </div>
+
+</body>
+</html>

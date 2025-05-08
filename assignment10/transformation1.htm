@@ -1,0 +1,79 @@
+<!-- 2D transformation in CSS -->
+<html>
+<head>
+  <title>Animated 2D Gradient Diamonds</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #fff;
+    }
+
+    .wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 120px);
+      gap: 30px;
+    }
+
+    .diamond {
+      width: 100px;
+      height: 100px;
+      border-radius: 10px;
+      transform: rotate(45deg);
+      animation: float 4s ease-in-out infinite;
+    }
+
+    /* Gradient styles */
+    .diamond:nth-child(1) {
+      background: linear-gradient(135deg, #1e90ff, #6a0dad);
+      animation-delay: 0s;
+    }
+
+    .diamond:nth-child(2) {
+      background: linear-gradient(135deg, #000080, #2c3e50);
+      animation-delay: 0.3s;
+    }
+
+    .diamond:nth-child(3) {
+      background: linear-gradient(135deg,#00f0ff, #a1ffce);
+      animation-delay: 0.6s;
+      margin-top: 10px;
+
+    }
+    
+    .diamond:nth-child(4) {
+      background: linear-gradient(135deg,#facc15, #7c3aed );
+      /* grid-column: 2 / span 1; */
+      margin-top: 10px;
+      animation-delay: 0.9s;
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: rotate(45deg) translateY(0) scale(1);
+      }
+      50% {
+        transform: rotate(45deg) translateY(-10px) scale(1.05);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="diamond"></div>
+    <div class="diamond"></div>
+    <div class="diamond"></div>
+    <div class="diamond"></div>
+  </div>
+
+</body>
+</html>
