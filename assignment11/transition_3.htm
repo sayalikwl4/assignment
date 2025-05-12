@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hover Overlay Card</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 40px;
+      background-color: #1d3a4a;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      display: flex;
+      gap: 30px;
+    }
+
+    .card {
+      position: relative;
+      width: 240px;
+      height: 300px;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+      background-color: #fff;
+      cursor: pointer;
+    }
+
+    .card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card-content {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: #ffffff;
+      color: #333;
+      padding: 20px;
+      box-sizing: border-box;
+      transform: translateY(100%);
+      transition: transform 0.4s ease;
+      text-align: center;
+    }
+
+    .card:hover .card-content {
+      transform: translateY(0);
+    }
+
+    .card-content h3 {
+      margin: 0;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .card-content p {
+      font-size: 14px;
+      margin-top: 5px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <img src="baby_girl.jpg" alt="babygirl">
+      <div class="card-content">
+        <h3>Summer Vibes</h3>
+        <p>young girl playing in the shallow waves at a beach.one of which features a cute duck face.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="mountainview.jpg" alt="mountainview">
+      <div class="card-content">
+        <h3>Mountain View</h3>
+        <p>The sky is clear and vivid blue, with a few scattered fluffy clouds...  </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="sunsetview.jpg" alt="sunsetview">
+      <div class="card-content">
+        <h3>Sunset View</h3>
+        <p>Capture nature's beauty under the golden sun.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>social icons</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      background: #f8f9fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .social-btn {
+      position: relative;
+      width: 60px;
+      height: 60px;
+      background-color: #3b5998;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 26px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      overflow: hidden;
+      transition: width 0.4s ease, font-size 0.3s ease;
+      margin: 10px;
+    }
+
+    .social-btn:hover {
+      width: 120px;
+      font-size: 16px;
+    }
+
+    .social-btn i {
+      transition: opacity 0.3s ease;
+    }
+
+    .social-btn:hover i {
+      opacity: 0;
+    }
+
+    .social-btn-youtube {
+      position: relative;
+      width: 60px;
+      height: 60px;
+      background-color:#e60023 ;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 26px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      overflow: hidden;
+      transition: width 0.4s ease, font-size 0.3s ease;
+      margin: 10px;
+    }
+
+    .social-btn-youtube:hover {
+      width: 120px;
+      font-size: 16px;
+    }
+
+    .social-btn-youtube i {
+      transition: opacity 0.3s ease;
+    }
+
+    .social-btn-youtube:hover i {
+      opacity: 0;
+    }
+    .social-btn-insta {
+      position: relative;
+      width: 60px;
+      height: 60px;
+      background-color:#ee2a7b;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 26px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      overflow: hidden;
+      transition: width 0.4s ease, font-size 0.3s ease;
+      margin: 10px;
+    }
+
+    .social-btn-insta:hover {
+      width: 120px;
+      font-size: 16px;
+    }
+
+    .social-btn-insta i {
+      transition: opacity 0.3s ease;
+    }
+
+    .social-btn-insta:hover i {
+      opacity: 0;
+    }
+
+    .social-btn-pinrest {
+      position: relative;
+      width: 60px;
+      height: 60px;
+      background-color:red;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 26px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      overflow: hidden;
+      transition: width 0.4s ease, font-size 0.3s ease;
+      margin: 10px;
+    }
+
+    .social-btn-pinrest:hover {
+      width: 120px;
+      font-size: 16px;
+    }
+
+    .social-btn-pinrest i {
+      transition: opacity 0.3s ease;
+    }
+
+    .social-btn-pinrest:hover i {
+      opacity: 0;
+    }
+    .social-btn-whatsapp {
+      position: relative;
+      width: 60px;
+      height: 60px;
+      background-color:green ;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 26px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      overflow: hidden;
+      transition: width 0.4s ease, font-size 0.3s ease;
+      margin: 10px;
+    }
+
+    .social-btn-whatsapp:hover {
+      width: 120px;
+      font-size: 16px;
+    }
+
+    .social-btn-whatsapp i {
+      transition: opacity 0.3s ease;
+    }
+
+    .social-btn-whatsapp:hover i {
+      opacity: 0;
+    }
+
+
+    .btn-label {
+      display: none;
+      white-space: nowrap;
+      transition: opacity 0.3s ease;
+    }
+    .social-btn:hover::after {
+      opacity: 1;
+    }
+
+    .social-btn:hover .btn-label {
+      display: inline;
+    }
+
+    /* Tooltip */
+    .social-btn::after {
+      content: "Facebook";
+      position: absolute;
+      bottom: -35px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: linear-gradient(to right, #4facfe, #00f2fe);
+      color: white;
+      padding: 5px 10px;
+      font-size: 13px;
+      border-radius: 5px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      pointer-events: none;
+    }
+
+   
+    
+    .social-btn-youtube:hover .btn-label {
+      display: inline;
+    }
+
+    /* Tooltip */
+    .social-btn-youtube::after {
+      content: "Youtube";
+      position: absolute;
+      bottom: -35px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: linear-gradient(to right, #e60023, #b3001b);
+      color: white;
+      padding: 5px 10px;
+      font-size: 13px;
+      border-radius: 5px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      pointer-events: none;
+    }
+
+    .social-btn-youtube:hover::after {
+      opacity: 1;
+    }
+    .social-btn-youtube:hover .btn-label {
+      display: inline;
+    }
+
+    /* Tooltip */
+    .social-btn-whatsapp::after {
+      content: "Whatsapp";
+      position: absolute;
+      bottom: -35px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: linear-gradient(to right,  #25D366, #128C7E);
+      color: white;
+      padding: 5px 10px;
+      font-size: 13px;
+      border-radius: 5px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      pointer-events: none;
+    }
+
+    .social-btn-whatsapp:hover::after {
+      opacity: 1;
+    }
+    .social-btn-whatsapp:hover .btn-label {
+      display: inline;
+    }
+
+    /* Tooltip */
+    .social-btn-insta::after {
+      content: "Instagram";
+      position: absolute;
+      bottom: -35px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: linear-gradient(to right, #f9ce34,  #ee2a7b and  #6228d7);
+      color: white;
+      padding: 5px 10px;
+      font-size: 13px;
+      border-radius: 5px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      pointer-events: none;
+    }
+
+    .social-btn-insta:hover::after {
+      opacity: 1;
+    }
+    .social-btn-insta:hover .btn-label {
+        display: inline;
+    }
+    
+    .social-btn-pinrest:hover .btn-label {
+      display: inline;
+    }
+
+    /* Tooltip */
+    .social-btn-pinrest::after {
+      content: "Pinrest";
+      position: absolute;
+      bottom: -35px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: linear-gradient(to right,  #e60023, #b3001b);
+      color: white;
+      padding: 5px 10px;
+      font-size: 13px;
+      border-radius: 5px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      pointer-events: none;
+    }
+
+    .social-btn-pinrest:hover::after {
+      opacity: 1;
+    }
+    
+    
+  </style>
+</head>
+<body>
+
+  <div class="social-btn">
+    <i class="fab fa-facebook-f"></i>
+    <span class="btn-label">Facebook</span>
+  </div>
+  <div class="social-btn-youtube">
+    <i class="fab fa-youtube"></i>
+    <span class="btn-label">Youtube</span>
+  </div>
+  <div class="social-btn-whatsapp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="btn-label">Whatsapp</span>
+  </div>
+  <div class="social-btn-insta">
+    <i class="fab fa-instagram"></i>
+    <span class="btn-label">Instagram</span>
+  </div>
+  <div class="social-btn-pinrest">
+    <i class="fab fa-pinterest"></i>
+    <span class="btn-label">pinterest</span>
+  </div>
+</body>
+</html>
